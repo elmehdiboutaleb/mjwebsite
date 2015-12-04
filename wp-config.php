@@ -22,19 +22,26 @@
 /** Nom de la base de données de WordPress. */
 
 /*
-define('DB_NAME', 'wpmj');
-define('DB_USER', 'root');
-define('DB_PASSWORD', '');
-define('DB_HOST', 'localhost');
-define('DB_CHARSET', 'utf8mb4');
-*/
-
 define('DB_NAME', 'elmehdibrhcntct');
 define('DB_USER', 'elmehdibrhcntct');
 define('DB_PASSWORD', 'mJ_2015#');
 define('DB_HOST', 'db4free.net');
 define('DB_CHARSET', 'utf8mb4');
+*/
 
+if ($_SERVER['HTTP_HOST'] == 'localhost') {
+	define('DB_NAME', 'wpmj');
+	define('DB_USER', 'root');
+	define('DB_PASSWORD', '');
+	define('DB_HOST', 'localhost');
+	define('DB_CHARSET', 'utf8mb4');
+} else {
+	define('DB_NAME', 'elmehdibrhcntct');
+	define('DB_USER', 'elmehdibrhcntct');
+	define('DB_PASSWORD', 'BddOvhEmb88');
+	define('DB_HOST', 'localhost');
+	define('DB_CHARSET', 'utf8mb4');
+}
 
 /** Type de collation de la base de données.
   * N'y touchez que si vous savez ce que vous faites.
@@ -85,7 +92,7 @@ $table_prefix  = 'wp_mj';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /* C'est tout, ne touchez pas à ce qui suit ! Bon blogging ! */
 
