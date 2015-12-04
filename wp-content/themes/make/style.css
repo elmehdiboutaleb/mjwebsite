@@ -3389,7 +3389,7 @@ input[type="week"] {
 	padding: 6px 8px;
 	padding: 0.6rem 0.8rem;
 	border: 0;
-	background-color: #eaecee;
+	background-color: black;
 
 	-webkit-appearance: none;
 }
@@ -3419,6 +3419,7 @@ select {
 	max-width: 100%;
 	outline: none;
 	vertical-align: top;
+	background-color: black;
 }
 
 
@@ -3567,6 +3568,7 @@ input::-moz-focus-inner {
 .wpcf7 input[type="submit"] {
 	margin-bottom: 0;
 }
+
 
 
 /*---------------------------------------------------------
